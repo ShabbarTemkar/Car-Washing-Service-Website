@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickWash | Professional Car Washing Service</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Sticky Navigation Header -->
+  <header>
+    <nav>
+      <div class="logo">QuickWash</div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="btn-book">Book Now</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Professional Car Washing Service</h1>
+        <p>Get your car sparkling clean in under 30 minutes!</p>
+        <button class="btn-cta">Schedule a Wash</button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=600&q=80"
+            alt="Basic Wash"
+          />
+          <div class="service-info">
+            <h3>Basic Wash</h3>
+            <p>Exterior wash + tire shine</p>
+            <span class="price">$15</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=600&q=80"
+            alt="Premium Wash"
+          />
+          <div class="service-info">
+            <h3>Premium Wash</h3>
+            <p>Full exterior + interior cleaning</p>
+            <span class="price">$30</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=600&q=80"
+            alt="Deluxe Detail"
+          />
+          <div class="service-info">
+            <h3>Deluxe Detailing</h3>
+            <p>Clay bar, wax, steam vacuum & engine bay</p>
+            <span class="price">$55</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Anchor Section -->
+    <section id="pricing" class="pricing-banner">
+      <h2>Transparent Pricing, Fast Turnaround</h2>
+      <p>No hidden charges. Choose your plan and get back on the road in showroom shine.</p>
+    </section>
+  </main>
+
+  <!-- Booking Modal -->
+  <div class="modal" id="booking-modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <span class="close-btn" aria-label="Close modal">&times;</span>
+      <h2>Book Your Wash</h2>
+      <form id="booking-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <select id="service-select" required>
+          <option value="" disabled selected>Select a Service</option>
+          <option value="basic">Basic Wash ($15)</option>
+          <option value="premium">Premium Wash ($30)</option>
+          <option value="deluxe">Deluxe Detailing ($55)</option>
+        </select>
+        <button type="submit" class="btn-submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <p><i class="fas fa-phone-alt"></i> Call us: (123) 456-7890</p>
+      <p><i class="fas fa-map-marker-alt"></i> 123 Car Wash St, Your City</p>
+    </div>
+    <div class="social-links">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
